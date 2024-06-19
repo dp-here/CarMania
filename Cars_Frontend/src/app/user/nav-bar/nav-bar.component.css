@@ -1,0 +1,13 @@
+.example-spacer{
+width: 86%;
+}
+
+
+mat-toolbar{
+    height: 41px; 
+    margin-bottom: 30px;
+}
+
+a:hover {
+    color: white
+  }

@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+    <span><a mat-icon-button href="/">Car Mania</a></span>
+    <span class="example-spacer"></span>
+    <a *ngIf="!loggedIn" mat-icon-button href="/register">Register</a>
+    <a *ngIf="!loggedIn" mat-icon-button href="/" style="margin-left: 66px">Login</a>
+    <a *ngIf="loggedIn" mat-icon-button (click)="logoutUser()">Logout</a>
+</mat-toolbar>

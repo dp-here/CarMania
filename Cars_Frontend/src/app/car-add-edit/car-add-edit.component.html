@@ -1,0 +1,27 @@
+<div mat-dialog-title>
+    <h1>Car Registration Form</h1>
+</div>
+<form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Car Name: </mat-label>
+                <input matInput type="text" formControlName="name">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Car Origin: </mat-label>
+                <input matInput formControlName="origin">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Car Price(in Lacks): </mat-label>
+                <input matInput type="number" formControlName="price">
+            </mat-form-field>
+        </div>
+        <div mat-dialog-actions class="action">
+            <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+            <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+        </div>
+        </div>
+        </form>
+
+        
